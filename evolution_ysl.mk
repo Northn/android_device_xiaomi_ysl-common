@@ -9,8 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
@@ -20,7 +21,7 @@ ENABLE_APEX := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := lineage_ysl
+PRODUCT_NAME := evolution_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
